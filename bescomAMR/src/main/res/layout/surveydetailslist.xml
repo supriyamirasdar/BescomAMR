@@ -1,0 +1,466 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl1"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+
+        <TextView
+            android:id="@+id/semicolon1"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtId"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl2"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ACCNo" />
+
+        <TextView
+            android:id="@+id/semicolon2"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtAccNo"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCNo/Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl3"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Phase" />
+
+        <TextView
+            android:id="@+id/semicolon3"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtPhase"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phase" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl4"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Connection Type" />
+
+        <TextView
+            android:id="@+id/semicolon4"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtConnectionType"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connection Type" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl5"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Box Availability" />
+
+        <TextView
+            android:id="@+id/semicolon5"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterBoxAvailability"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Box Availability" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl6"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Type Of Box" />
+
+        <TextView
+            android:id="@+id/semicolon6"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTypeOfBox"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type Of Box" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl7"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Make" />
+
+        <TextView
+            android:id="@+id/semicolon7"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterMake"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Make" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl8"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="MeterSlNo" />
+
+        <TextView
+            android:id="@+id/semicolon8"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterSlNo"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MeterSlNo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl9"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Year Of Manufacture" />
+
+        <TextView
+            android:id="@+id/semicolon9"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtYearOfManufacture"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Of Manufacture" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl10"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Placement" />
+
+        <TextView
+            android:id="@+id/semicolon10"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterPlacement"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Placement" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl11"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ComRJ11" />
+
+        <TextView
+            android:id="@+id/semicolon11"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtComRJ11"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ComRJ11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl12"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ComOptical" />
+
+        <TextView
+            android:id="@+id/semicolon12"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtComOptical"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ComOptical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl13"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Floor" />
+
+        <TextView
+            android:id="@+id/semicolon13"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtFloor"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl14"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Present Reading" />
+
+        <TextView
+            android:id="@+id/semicolon14"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtPresentReading"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present Reading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl15"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Remarks" />
+
+        <TextView
+            android:id="@+id/semicolon15"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtRemarks"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl16"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Captured On" />
+
+        <TextView
+            android:id="@+id/semicolon16"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtCapturedOn"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Captured On" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl17"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Network Strength" />
+
+        <TextView
+            android:id="@+id/semicolon17"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtNetworkStrength"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed" />
+    </LinearLayout>
+
+</LinearLayout>

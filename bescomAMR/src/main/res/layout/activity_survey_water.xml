@@ -1,0 +1,955 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SBBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:filterTouchesWhenObscured="false"
+    android:padding="10dp"
+    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+    android:scrollbarTrackVertical="@drawable/scroller_virtical_track" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textConnId"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ConnId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textRRNo"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RRNO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textDistrict"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="District" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/ddlDistrict"
+                style="@style/SBSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textTaluk"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taluk" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/ddlTaluk"
+                style="@style/SBSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textGP"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gram Panchayat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/ddlGramPanchayat"
+                style="@style/SBSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textVillage"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Village" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/ddlVillage"
+                style="@style/SBSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textMeterStatus"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Meter Status" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupMeterStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioMetered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metered"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioUnMetered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UnMetered"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/lytMeterDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textMeterPhase"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter Phase" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroupMeterPhase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioThreeCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three-CT"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioThreeNonCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three-NonCT"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/texteterMake"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter Make" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/ddlmetermake"
+                    style="@style/SBSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textmeterslno"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meter Serial Number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editmeterslno"
+                style="@style/SBTextBox"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:maxLength="12"
+               />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textMeterType"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Meter Type" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroupMeterType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioDLMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DLMS"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioNonDLMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NON DLMS"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textConnectionStatus"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Connection Status" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupConnectionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioInActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="InActive"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textSource"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Source (Main Source of Water)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/ddlWaterSource"
+                style="@style/SBSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textBorewell"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borewell" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupBorewell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioNotPresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Present"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioWorking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Working"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioNotWorking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Working"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textBorewellDepth"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borewell Depth (in feet)" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editBorewellDepth"
+            style="@style/SBTextBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textSancLoad"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SancLoad (in HP)" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editSancLoad"
+            style="@style/SBTextBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textPumpCapacity"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pump Capacity (in HP)" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editPumpCapacity"
+            style="@style/SBTextBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textPipeDimension"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pipe Dimension (in inches)" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editPipeDimension"
+            style="@style/SBTextBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textTypeOfPipeBorewell"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type Of Pipe at Borewell" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPipeTypeBorewell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioBorewellMetallic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metallic"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioBorewellPVC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PVC"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioBorewellCPVC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPVC"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textTypeOfSupply"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type Of Supply" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTypeOfSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioOverhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overhead"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radioDirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direct"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/lytOverhead"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textTank"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tank Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/ddlTank"
+                    style="@style/SBSpinner"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imgAdd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="Tank"
+                    android:src="@drawable/ok" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtTankAdd"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tank Names"
+                    android:textColor="@color/blue1"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/imgCross"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="Day"
+                    android:src="@drawable/cancel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textNoOfOutlets"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Of Outlets" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editNoOfOutlets"
+                style="@style/SBTextBox"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textControlValves"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Control Valves" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editControlValves"
+                style="@style/SBTextBox"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textTypeOfPipeOutlet"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Type Of Pipe at Outlet" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroupPipeTypeOutlet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioOutletMetallic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metallic"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioOutletPVC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PVC"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioOutletCPVC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPVC"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textTankDimension"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tank Dimension (Length*Diameter)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTankDimensionLength"
+                    style="@style/SBTextBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Length"
+                    android:inputType="number"
+                    android:maxLength="6" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editTankDimensionDiameter"
+                    style="@style/SBTextBox"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:hint="Diameter"
+                    android:inputType="number"
+                    android:maxLength="6" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textTankCapacity"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tank Capacity (liters)" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTankCapacity"
+                style="@style/SBTextBox"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textDistance"
+                    style="@style/SBSmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance (Pump to Overhead Tank in meters)" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editDistance"
+                style="@style/SBTextBox"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textWaterMan"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Man" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editWaterMan"
+            style="@style/SBTextBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+            android:maxLength="25" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textContactNo"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editContactNo"
+            style="@style/SBTextBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textSimType"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIM TYPE(Preferred SIM)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/ddlSimType"
+                style="@style/SBSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewWaterremarks"
+                style="@style/SBSmallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editRemarks"
+                style="@style/SBTextBox"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:ems="20"
+                android:inputType="text"
+                android:maxLength="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#191919"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnsurveysave"
+                style="@style/SBButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btnsurveyreset"
+                style="@style/SBButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Reset" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

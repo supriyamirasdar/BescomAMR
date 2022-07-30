@@ -1,0 +1,845 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl1"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+
+        <TextView
+            android:id="@+id/semicolon1"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtId"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl2"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="RRNO" />
+
+        <TextView
+            android:id="@+id/semicolon2"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtAccNo"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCNo/Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl3"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="District" />
+
+        <TextView
+            android:id="@+id/semicolon3"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtDistrict"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="District" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl4"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Taluk" />
+
+        <TextView
+            android:id="@+id/semicolon4"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTaluk"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taluk" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl5"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Gram Panchayat" />
+
+        <TextView
+            android:id="@+id/semicolon5"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtGramPanchayat"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gram Panchayat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl6"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Village" />
+
+        <TextView
+            android:id="@+id/semicolon6"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtVillage"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Village" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl7"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Status" />
+
+        <TextView
+            android:id="@+id/semicolon7"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterStatus"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Status" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl9"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Phase" />
+
+        <TextView
+            android:id="@+id/semicolon9"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterPhase"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Phase" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl10"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meter Make" />
+
+        <TextView
+            android:id="@+id/semicolon10"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterMake"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MeterMake" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl11"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="MeterSlno" />
+
+        <TextView
+            android:id="@+id/semicolon11"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterSlno"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MeterSlno" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl12"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="MeterType" />
+
+        <TextView
+            android:id="@+id/semicolon12"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtMeterType"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MeterType" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl13"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Water Source" />
+
+        <TextView
+            android:id="@+id/semicolon13"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtWaterSource"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WaterSource" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl14"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Borewell" />
+
+        <TextView
+            android:id="@+id/semicolon14"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtBorewell"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borewell" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl15"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Borewell Depth(feet)" />
+
+        <TextView
+            android:id="@+id/semicolon15"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtBorewellDepth"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borewell Depth" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl16"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Conn Status" />
+
+        <TextView
+            android:id="@+id/semicolon16"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtConnStatus"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conn Status" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl17"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sanc Load(HP)" />
+
+        <TextView
+            android:id="@+id/semicolon17"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtSancLoad"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanc Load" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl18"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Pump Capacity(HP)" />
+
+        <TextView
+            android:id="@+id/semicolon18"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtPumpCapacity"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pump Capacity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl19"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Pipe Dimention(inch)" />
+
+        <TextView
+            android:id="@+id/semicolon19"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtPipeDimension"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pipe Dimension" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl20"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Type Of Pipe Borewell" />
+
+        <TextView
+            android:id="@+id/semicolon20"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTyprOfPiprBorewell"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pipe Dimension" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl21"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Type Of Supply" />
+
+        <TextView
+            android:id="@+id/semicolon21"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTypeOfSupply"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type Of Supply" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl22"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tank Name" />
+
+        <TextView
+            android:id="@+id/semicolon22"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTankName"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tank Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl23"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="No Of Outlets" />
+
+        <TextView
+            android:id="@+id/semicolon23"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtNoOfOutlets"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Of Outlets" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl24"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Control Value" />
+
+        <TextView
+            android:id="@+id/semicolon24"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtControlValue"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Control Value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl25"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Type Of Pipe At Outlets" />
+
+        <TextView
+            android:id="@+id/semicolon25"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTypeofpipeOutlets"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Pipe At Outlets" />
+    </LinearLayout>
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl26"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="TankDimension(Length*Diameter)" />
+
+        <TextView
+            android:id="@+id/semicolon26"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTankDimension"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TankDimension(Length*Diameter)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl27"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tank Capacity(liters)" />
+
+        <TextView
+            android:id="@+id/semicolon27"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtTankCapacity"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tank Capacity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl28"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Distance(meter)" />
+
+        <TextView
+            android:id="@+id/semicolon28"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl29"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Water Man" />
+
+        <TextView
+            android:id="@+id/semicolon29"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtWaterMan"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Man" />
+    </LinearLayout>
+    
+        
+                <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl30"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Contact No" />
+
+        <TextView
+            android:id="@+id/semicolon30"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtContactNo"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No" />
+    </LinearLayout>
+    
+                        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl31"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="SIM Type" />
+
+        <TextView
+            android:id="@+id/semicolon31"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtSimType"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim Type" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl32"
+            style="@style/SBSmallLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Remarks" />
+
+        <TextView
+            android:id="@+id/semicolon32"
+            style="@style/SBSmallLabel"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/colon" />
+
+        <TextView
+            android:id="@+id/txtRemarks"
+            style="@style/SBSmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks" />
+    </LinearLayout>
+
+</LinearLayout>

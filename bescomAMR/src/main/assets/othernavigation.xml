@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created Nitish on 26/02/2014  -->
+<DropDownList>
+    
+    <ddlItem>
+		<id>in.nsoft.bescomamr.VillageMasterActivity</id>
+		<value>Village Master</value>
+	</ddlItem>	
+	 <ddlItem>
+		<id>in.nsoft.bescomamr.TankMasterActivity</id>
+		<value>Tank Master</value>
+	</ddlItem>	
+	
+	<ddlItem>
+		<id>in.nsoft.bescomamr.DownloadDBToSDCardActivity</id>
+		<value>Download DB to SD Card</value>
+	</ddlItem>	 
+	
+	
+	
+	<ddlItem>
+		<id>in.nsoft.bescomamr.AboutAppActivity</id>
+		<value>About</value>
+	</ddlItem>		
+	<!-- <ddlItem>
+		<id>in.nsoft.bescomamr.TransformerMasterActivity</id>
+		<value>Transformer Master</value>
+	</ddlItem>	 -->
+		
+</DropDownList>
